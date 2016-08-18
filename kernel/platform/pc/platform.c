@@ -426,12 +426,12 @@ void platform_init(void)
     platform_init_smp();
 #endif
 
-    platform_init_acpi();
+    //platform_init_acpi();
 
     if (!early_console_disabled) {
         // detach the early console - pcie init may move it
         gfxconsole_bind_display(NULL, NULL);
     }
 
-    platform_init_pcie();
+    //platform_init_pcie();
 }

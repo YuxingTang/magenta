@@ -187,6 +187,8 @@ mx_handle_t sys_pci_get_nth_device(uint32_t index, mx_pcie_get_nth_info_t* out_i
      */
     LTRACE_ENTRY;
 
+    return ERR_NOT_FOUND;
+
     if (!out_info)
         return ERR_INVALID_ARGS;
 

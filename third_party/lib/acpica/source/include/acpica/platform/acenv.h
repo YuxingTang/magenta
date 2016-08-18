@@ -218,7 +218,7 @@
 #elif defined(__HAIKU__)
 #include "achaiku.h"
 
-#elif defined(LK)
+#elif defined(__Fuchsia__) || defined(LK)
 #include "acmagenta.h"
 
 #else
